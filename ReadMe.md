@@ -37,6 +37,8 @@ Since this project runs in Google Colab:
 - The captured image is displayed to confirm your face is clearly visible.
 - Ensures the landmark detection will work properly.
 
+![Face Capture](images/face_capture.png)
+
 **Concept:** Like checking your photo in a mirror before applying a filter.
 
 ---
@@ -59,6 +61,8 @@ Since this project runs in Google Colab:
 - Each landmark has X, Y (image coordinates) and Z (depth) values.
 - Collectively, these points outline the 3D structure of the face.
 
+![Face Mesh](images/face_mesh.png)
+
 **Concept:** Imagine placing tiny dots all over your face — these dots form the 3D map.
 
 ---
@@ -68,6 +72,8 @@ Since this project runs in Google Colab:
 - Instead of connecting points with triangles, we keep only the dots for a cleaner visualization.
 - Flip the Y-axis for correct orientation in 3D viewers.
 - Export the 3D points as a `.glb` file.
+
+![Face Cloud Exported](images/Exported_face_cloud.png)
 
 **Why point cloud instead of mesh?**
 - Triangles can look messy and cluttered.
